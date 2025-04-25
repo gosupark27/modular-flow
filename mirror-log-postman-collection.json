@@ -1,0 +1,38 @@
+{
+    "info": {
+      "name": "Mirror Log API",
+      "description": "Collection for testing the /mirror-log endpoint.",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Post Mirror Log",
+        "request": {
+          "method": "POST",
+          "header": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n    \"user_id\": \"seth_001\",\n    \"name\": \"Seth\",\n    \"selected_option\": \"B\",\n    \"prompt_text\": \"What’s something you understand deeply but find hard to explain to most people?\",\n    \"flame_role_inference\": \"Silent Observer\"\n}"
+          },
+          "url": {
+            "raw": "http://localhost:8000/mirror-log/",
+            "protocol": "http",
+            "host": [
+              "localhost"
+            ],
+            "port": "8000",
+            "path": [
+              "mirror-log"
+            ]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
+  
